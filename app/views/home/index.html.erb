@@ -3,7 +3,7 @@
 <ul>
 
 <% @tweets.each do |tweet| %>
-<li><%= tweet.message %></li>
+<li><%= tweet.message %> | <%= tweet.user.email %> | <%= tweet.user.updated_at%></li>
 <% end %>
 
 </ul>
